@@ -1,0 +1,124 @@
+body {
+    font-size: 16px;
+}
+
+// Start Main
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    #title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 168px;
+        margin-bottom: 40px;
+    }
+    p {
+        text-align-last: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #button {
+        background-color: #e50914;
+        width: 220px;
+        height: 80px;
+        margin-top: 90px;
+        margin-bottom: 147px;
+        border-radius: 10px;
+        border: none;
+        font-size: 2em;
+        color: white;
+        cursor: pointer;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    #button:hover {
+        background-color: #fd000d;
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 3.8em;
+        text-align-last: center;
+        color: white;
+    }
+    p {
+        font-size: 1.5em;
+        color: white;
+    }
+}
+
+// End Main
+// Start div
+.div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 45px;
+    .text {
+        display: flex;
+        flex-direction: column;
+        width: 586px;
+        p {
+            line-height: 47px;
+        }
+    }
+    h1 {
+        font-size: 2.1em;
+        font-weight: 800;
+    }
+    p {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+}
+
+// End div
+// responsividade
+@media screen and(max-width: 1024px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .div {
+        display: flex;
+        flex-direction: column;
+        .text {
+            width: 100vw;
+            padding: 10px;
+        }
+        img {
+            order: 1;
+        }
+    }
+    h1,
+    p {
+        text-align: center;
+    }
+}
+
+@media screen and(max-width: 426px) {
+    body {
+        font-size: 10px;
+    }
+    img {
+        width: 288px;
+    }
+    .text {
+        p,
+        h1 {
+            text-align: center;
+        }
+    }
+}
